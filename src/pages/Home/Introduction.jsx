@@ -17,7 +17,7 @@ export default function Introduction() {
         software development{" "}
       </p>
 
-      <button className="border-2 border-primary text-background px-10 py-5 rounded">
+      <button className="border-2 border-primary text-white bg-inherit px-10 py-5 rounded text-2xl font-semibold">
         Enter
       </button>
     </div>
