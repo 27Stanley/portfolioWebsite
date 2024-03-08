@@ -4,11 +4,11 @@ export default function Introduction() {
   return (
     <div className="h-[90vh] bg-background flex flex-col items-start justify-center gap-5">
       <h1 className="text-primary h-1"> Hello, my name is</h1>
-      <h1 className="text-secondary text-9xl font-semibold h-16">
+      <h1 className="text-secondary text-9xl sm:text-3xl font-semibold h-16">
         {" "}
         Stanley Leung
       </h1>
-      <h1 className="text-white text-7xl font-semibold h-10">
+      <h1 className="text-white text-7xl sm:text-2xl font-semibold h-10">
         I'm an aspiring software developer
       </h1>
       <p className="text-primary w-1/2">
@@ -17,7 +17,7 @@ export default function Introduction() {
         software development{" "}
       </p>
 
-      <button className="border-2 border-primary text-white bg-inherit px-10 py-5 rounded text-2xl font-semibold">
+      <button className="border-5 border-primary text-white bg-inherit px-10 py-5 rounded text-2xl font-semibold">
         Enter
       </button>
     </div>
