@@ -10,16 +10,17 @@ export default function Experience() {
       <SectionTitle title="Experience" />
 
       <div className="flex py-10 gap-20 sm:flex-col">
-        <main className="flex flex-col gap-5 border-l-2 border-[#76bdff] w-1/6 sm:flex-row sm:overflow-x-scroll sm:w-full">
+        <main className="flex flex-col gap-5 border-l-2 border-[#76bdff] w-1/6 sm:flex-row sm:w-full">
           {experience.map((job, index) => (
             <div
+              key={`experience_${index}`}
               onClick={() => {
                 setSelectedItemIndex(index);
               }}
-              className="cursor-pointer"
+              className="cursor-pointer transition duration-300 "
             >
               <h1
-                className={`text-xl px-5 ${
+                className={`text-xl px-5 rounded ${
                   selectedItemIndex === index
                     ? "text-secondary border-secondary border-l-4 -ml-[4px] bg-[#ffffff36] py-3"
                     : "text-primary"
