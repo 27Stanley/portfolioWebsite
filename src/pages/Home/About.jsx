@@ -26,22 +26,24 @@ export default function About() {
         </div>
         <div className="flex flex-col gap-5 w-1/2 sm:w-full">
           <p className="text-primary text-2xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            A creative tech enthusiast who is passionate about software
+            development and computers.
           </p>
           <p className="text-primary text-xl">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
+            After completing my Bachelor's degree at Loguhborough University in
+            2021 and working on computer hardware thereafter for about 1.5 years
+            in Manchester, I have further embraced my interest in the IT field
+            by successfully completing a programming course on a scholarship
+            with Northcoders at the end 2023. I am particularly interested in
+            building websites, problem solving code and assembling computer
+            systems.
           </p>
         </div>
       </div>
 
       <div className="py-5">
         <h1 className="text-secondary text-3xl">
-          Here are some technologies that I work with
+          Here are some technologies that I've used:
         </h1>
         <div className="flex flex-wrap gap-12">
           {skills.map((skill, index) => (

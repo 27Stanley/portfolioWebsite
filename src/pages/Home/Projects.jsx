@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "../../components/SectionTitle";
-import { experience } from "../../resources/experience";
+import { projects } from "../../resources/projects";
 import { useState } from "react";
 
 export default function Projects() {
@@ -11,8 +11,9 @@ export default function Projects() {
 
       <div className="flex py-10 gap-20 sm:flex-col">
         <main className="flex flex-col gap-5 border-l-2 border-[#76bdff] w-1/6 sm:flex-row sm:overflow-x-scroll sm:w-full">
-          {experience.map((job, index) => (
+          {projects.map((project, index) => (
             <div
+              key={`project_${index}`}
               onClick={() => {
                 setSelectedItemIndex(index);
               }}
@@ -26,20 +27,23 @@ export default function Projects() {
                 }
                 `}
               >
-                {job.period}
+                {project.period}
               </h1>
             </div>
           ))}
         </main>
         <div className="flex flex-col gap-10">
           <h1 className="text-secondary text-2xl">
-            {experience[selectedItemIndex].title}
+            {projects[selectedItemIndex].title}
           </h1>
           <h1 className="text-primary text-2xl">
-            {experience[selectedItemIndex].company}
+            {projects[selectedItemIndex].technologies}
           </h1>
           <h1 className="text-white text-xl">
-            {experience[selectedItemIndex].description}
+            {projects[selectedItemIndex].description}
+          </h1>
+          <h1 className="text-white text-xl">
+            {projects[selectedItemIndex].gitlink}
           </h1>
         </div>
       </div>

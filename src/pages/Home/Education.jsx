@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "../../components/SectionTitle";
-import { experience } from "../../resources/experience";
+import { education } from "../../resources/education";
 import { useState } from "react";
 
 export default function Education() {
@@ -10,9 +10,10 @@ export default function Education() {
       <SectionTitle title="Education" />
 
       <div className="flex py-10 gap-20 sm:flex-col">
-        <main className="flex flex-col gap-5 border-l-2 border-[#76bdff] w-1/6 sm:flex-row sm:overflow-x-scroll sm:w-full">
-          {experience.map((job, index) => (
+        <main className="flex flex-col gap-5 border-l-2 border-[#76bdff] w-1/6 sm:flex-row sm:w-full">
+          {education.map((school, index) => (
             <div
+              key={`school_${index}`}
               onClick={() => {
                 setSelectedItemIndex(index);
               }}
@@ -26,20 +27,20 @@ export default function Education() {
                 }
                 `}
               >
-                {job.period}
+                {school.period}
               </h1>
             </div>
           ))}
         </main>
         <div className="flex flex-col gap-10">
           <h1 className="text-secondary text-2xl">
-            {experience[selectedItemIndex].title}
+            {education[selectedItemIndex].school}
           </h1>
           <h1 className="text-primary text-2xl">
-            {experience[selectedItemIndex].company}
+            {education[selectedItemIndex].subject}
           </h1>
           <h1 className="text-white text-xl">
-            {experience[selectedItemIndex].description}
+            {education[selectedItemIndex].result}
           </h1>
         </div>
       </div>
