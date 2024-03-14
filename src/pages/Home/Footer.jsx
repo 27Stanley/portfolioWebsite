@@ -4,7 +4,12 @@ export default function Footer() {
   return (
     <div className="flex w-full items-center sm:flex-col">
       <div className="flex flex-col gap-3 w-1/2 sm:w-full">
-        <p className="text-primary text-xl">Linkedin Github</p>
+        <p className="text-primary text-xl">
+          Linkedin: www.linkedin.com/in/927stanley
+        </p>
+        <p className="text-primary text-xl">
+          Github: https://github.com/27Stanley
+        </p>
       </div>
       <div className="h-[70vh] w-1/2 sm:w-full">
         <dotlottie-player

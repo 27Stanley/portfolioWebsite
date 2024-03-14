@@ -10,14 +10,14 @@ import Footer from "./Footer";
 function Home() {
   return (
     <div className="bg-background px-40 sm:px-5">
-      <Header />
+      {/* <Header /> */}
       <div>
         <Introduction />
         <About />
         <Experience />
         <Projects />
         <Education />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );
