@@ -6,7 +6,7 @@ export default function Introduction() {
       <h1 className="text-primary h-1"> Hello, my name is</h1>
       <h1 className="text-secondary text-9xl sm:text-3xl font-semibold h-16">
         {" "}
-        Stanley Leung
+        Stanley
       </h1>
       <h1 className="text-white text-7xl sm:text-2xl font-semibold h-10 sm:w-full">
         I'm an aspiring software developer
