@@ -24,21 +24,11 @@ function Home() {
           transition={{ duration: 0.5, delay: 0.25 }}
         >
           <Introduction />
-        </motion.div>
-        <div>
           <About />
-        </div>
-        <div>
           <Experience />
-        </div>
-        <div>
           <Projects />
-        </div>
-        <div>
           <Education />
-        </div>
-
-        {/* <Footer /> */}
+        </motion.div>
       </div>
     </div>
   );
