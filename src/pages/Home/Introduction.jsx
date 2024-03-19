@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Introduction() {
   return (
-    <div className="h-[90vh] bg-background flex flex-col items-start justify-center gap-5">
+    <div className="h-[100vh] bg-background flex flex-col items-start justify-center gap-5">
       <h1 className="text-primary h-1"> Hello, my name is</h1>
       <h1 className="text-secondary text-9xl sm:text-3xl font-semibold h-16">
         {" "}
