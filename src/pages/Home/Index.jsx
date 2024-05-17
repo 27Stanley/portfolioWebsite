@@ -6,6 +6,7 @@ import Experience from "./Experience";
 import Education from "./Education";
 import Projects from "./Projects";
 import Footer from "./Footer";
+import LeftSlider from "./LeftSlider";
 
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
@@ -60,17 +61,12 @@ function Home() {
           <About />
         </motion.div>
 
-        <motion.div>
-          <Experience />
-        </motion.div>
+        <Experience />
 
-        <motion.div>
-          <Projects />
-        </motion.div>
+        <Projects />
 
-        <motion.div>
-          <Education />
-        </motion.div>
+        <Education />
+        <LeftSlider />
       </div>
     </div>
   );

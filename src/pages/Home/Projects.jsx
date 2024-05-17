@@ -36,9 +36,9 @@ export default function Projects() {
           <h1 className="text-secondary text-2xl">
             {projects[selectedItemIndex].title}
           </h1>
-          <h1 className="text-primary text-2xl">
+          {/* <h1 className="text-primary text-2xl">
             {projects[selectedItemIndex].technologies}
-          </h1>
+          </h1> */}
           <h1 className="text-white text-xl">
             {projects[selectedItemIndex].description}
           </h1>

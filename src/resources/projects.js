@@ -1,12 +1,12 @@
 export const projects = [
   {
     id: 3,
-    title: "Dental Alliance Asia Website",
-    technologies: "Pico Css",
+    title: "Vue 3 Pokedex",
+    technologies: "Vue.js, ",
     period: "03/2024",
     description:
-      "Successfully completed a programming course in learning fundamental javascript and web development concepts, following industry best practices to develop a website and phone app.",
-    gitlink: "https://github.com/27Stanley/daaWebsite",
+      "Using the pokedex api, I've created a webapp to filter and find information about pokemon based on region.",
+    gitlink: "https://github.com/27Stanley/vuePokedex",
   },
   {
     id: 2,
