@@ -37,7 +37,3 @@ i:hover {
   color: #ffffff;
   font-size: 80px;
 }
-
-.divider {
-  transition: width 0.3s ease;
-}
